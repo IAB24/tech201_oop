@@ -2,7 +2,7 @@
 
 ## What is OOP?
 
--Object Oriented means directed towards objects. In other words, it means functionally 
+Object Oriented means directed towards objects. In other words, it means functionally 
 directed towards modelling objects. This is one of the many techniques used for modelling 
 complex systems by describing a collection of interacting objects via their data and 
 behavior.
@@ -11,7 +11,7 @@ on using objects and classes to design and build applications. Major pillars of 
 Oriented Programming (OOP) are Inheritance, Polymorphism, Abstraction, ad 
 Encapsulation.
 
-![img_1.png](img_1.png)
+![img_3.png](img_3.png)
 
 ## What are the four pillars of OOP?
 
@@ -157,4 +157,4 @@ Enhances program modularity because each object exists independently and new
 features can be added easily without disturbing the existing ones.
 - Presents a good framework for code libraries where supplied components can be 
 easily adapted and modified by the programmer.
-- Imparts code reusabilit
+- Imparts code reusability.
