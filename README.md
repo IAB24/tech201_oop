@@ -16,34 +16,36 @@ Encapsulation.
 ## What are the four pillars of OOP?
 
 
-### Encapsulation
-This property hides unnecessary details and makes it easier to manage the program 
-structure. Each object’s implementation and state are hidden behind well-defined 
-boundaries and that provides a clean and simple interface for working with them. One way 
-to accomplish this is by making the data private.
-````python
-from reptile import Reptile
+### Abstraction
+This property allows us to hide the details and expose only the essential features of a 
+concept or object. For example, a person driving a scooter knows that on pressing a horn, 
+sound is emitted, but he has no idea about how the sound is actually generated on pressing 
+the horn.
 
-class Snake(Reptile):
+````python
+class Animal:
 
     def __init__(self):
-        super().__init__()
-        self.forked_tongue = True
-        self.venom = None
-        self.limbs = False
+        self.alive = True
+        self.spine = True
+        self.eyes = True
+        self.lungs = True
 
-    def use_tongue_to_smell(self):
-        print("Do I say it smells or tastes nice?")
+    def breathe(self):
+        print("One breath in one breath out")
 
-sidney = Snake()
-sidney.seek_heat()
-sidney.limbs
-#Encapsulation is about hiding it via another file. Functions hidden cant access.
+    def eat(self):
+        print("Nom Nom Nom")
 
+    def procreate(self):
+        print("Find a mate")
 
+    def move(self):
+        print("Onwards and upwards")
+
+cat = Animal()
+cat.breathe()
 ```` 
-
-
 
 ### Inheritance
 Inheritance, also called generalization, allows us to capture a hierarchal relationship 
@@ -84,37 +86,33 @@ jeremy_the_reptile.move()
 
 ```` 
 
-
-### Abstraction
-This property allows us to hide the details and expose only the essential features of a 
-concept or object. For example, a person driving a scooter knows that on pressing a horn, 
-sound is emitted, but he has no idea about how the sound is actually generated on pressing 
-the horn.
-
+### Encapsulation
+This property hides unnecessary details and makes it easier to manage the program 
+structure. Each object’s implementation and state are hidden behind well-defined 
+boundaries and that provides a clean and simple interface for working with them. One way 
+to accomplish this is by making the data private.
 ````python
-class Animal:
+from reptile import Reptile
+
+class Snake(Reptile):
 
     def __init__(self):
-        self.alive = True
-        self.spine = True
-        self.eyes = True
-        self.lungs = True
+        super().__init__()
+        self.forked_tongue = True
+        self.venom = None
+        self.limbs = False
 
-    def breathe(self):
-        print("One breath in one breath out")
+    def use_tongue_to_smell(self):
+        print("Do I say it smells or tastes nice?")
 
-    def eat(self):
-        print("Nom Nom Nom")
+sidney = Snake()
+sidney.seek_heat()
+sidney.limbs
+#Encapsulation is about hiding it via another file. Functions hidden cant access.
 
-    def procreate(self):
-        print("Find a mate")
 
-    def move(self):
-        print("Onwards and upwards")
-
-cat = Animal()
-cat.breathe()
 ```` 
+
 
 ### Polymorphism
 Poly-morphism means many forms. That is, a thing or action is present in different forms
