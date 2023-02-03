@@ -2,14 +2,10 @@
 
 ## What is OOP?
 
-Object Oriented means directed towards objects. In other words, it means functionally 
-directed towards modelling objects. This is one of the many techniques used for modelling 
-complex systems by describing a collection of interacting objects via their data and 
-behavior.
-Python, an Object Oriented programming (OOP), is a way of programming that focuses 
-on using objects and classes to design and build applications. Major pillars of Object 
-Oriented Programming (OOP) are Inheritance, Polymorphism, Abstraction, ad 
-Encapsulation.
+
+Object Oriented programming (OOP) is a way of programming that focuses 
+on using objects and classes to design and build applications. 
+
 
 ![img_3.png](img_3.png)
 
@@ -25,7 +21,7 @@ the horn.
 ````python
 class Animal:
 
-    def __init__(self):
+    def __init__(self): # self keyword is used to represent an instance (object) of the given class
         self.alive = True
         self.spine = True
         self.eyes = True
@@ -115,8 +111,7 @@ sidney.limbs
 
 
 ### Polymorphism
-Poly-morphism means many forms. That is, a thing or action is present in different forms
-or ways. One good example of polymorphism is constructor overloading in classes.
+Different subclasses of the same superclass can implement their shared interface in different ways.
 
 ````python
 from snake import Snake
@@ -148,8 +143,7 @@ peter.shed_skin()
 
 
 ## What are benefits of using OOP?
-Python was designed with an object-oriented approach. OOP offers the following 
-advantages: 
+
 - Provides a clear program structure, which makes it easy to map real world problems
 and their solutions.
 - Facilitates easy maintenance and modification of existing code.
@@ -158,3 +152,13 @@ features can be added easily without disturbing the existing ones.
 - Presents a good framework for code libraries where supplied components can be 
 easily adapted and modified by the programmer.
 - Imparts code reusability.
+
+
+## What are Lambda functions? 
+These are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python. 
+
+# Where can Lambda functions be useful?
+- It’s an ideal choice for evaluating a single expression that is
+supposed to be evaluated only once.
+- The code is simple and clear.
+- No additional variables are added.
